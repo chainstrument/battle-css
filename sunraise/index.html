@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+    </div>
+    
+    <style>
+
+        .body{
+            background-color:#D25B70;
+            height: 300px;
+            width: 300px;
+            position:relative;
+            display: flex;
+            justify-content:center
+        }
+        .stripe{
+            width: 100px;
+            position:absolute;
+            height: 10px;
+            border-radius: 15px;
+            background-color: #f2e09f;
+            top:195px;
+            right: calc(50% + 20px);
+            transform-origin: calc(100% + 20px) center ;
+        }
+
+        .stripe:nth-child(2)
+        {
+            transform: rotate(30deg);
+        }
+        .stripe:nth-child(3)
+        {
+            transform: rotate(60deg);
+        }
+
+        .stripe:nth-child(4)
+        {
+            transform: rotate(90deg);
+        }
+
+        .stripe:nth-child(5)
+        {
+            transform: rotate(120deg);
+        }
+        .stripe:nth-child(6)
+        {
+            transform: rotate(150deg);
+        }
+        .stripe:nth-child(7)
+        {
+            transform: rotate(180deg);
+        } 
+
+
+    </style>
+</body>
+</html>
