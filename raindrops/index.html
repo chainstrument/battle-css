@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="drop"></div>
+        <div class="drop"></div>
+        <div class="drop"></div>
+    </div>
+
+<style>
+
+    .body{
+        background-color: #F3AC3C;
+        width: 300px;
+    height: 300px;
+    }
+
+    .drop{
+        color: #254241;
+        background: currentColor;
+        width: 80px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        position: absolute;
+        top: 40px;
+        left: 160px;
+        transform-origin: center calc(100% + 30px);
+
+    }
+
+.drop::after{
+    content: '';
+    width: 40px;
+    aspect-ratio: 1;
+    background: currentColor;
+    position: absolute;
+    top: calc(100% - 32px);
+    left: 20px;
+    transform: rotate(45deg);
+
+}
+
+.drop:nth-child(2)
+{
+    transform: translateX(-10px) rotate(-90deg);
+
+}
+.drop:nth-child(3)
+{
+    transform: rotate(-180deg);
+    
+}
+</style>
+
+</body>
+</html>
